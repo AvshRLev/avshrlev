@@ -3,6 +3,7 @@
 
 I am a junior fullstack developer with a DevOps orientation, experienced in end-to-end development of Python/JavaScript web apps.
 I was mentored to use best practices and clean code principles to produce high quality and maintainable code.
+
 I get along great with people and love working in a team.
 In my spare time I love hiking and I weave baskets.
 
