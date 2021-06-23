@@ -9,9 +9,13 @@ I was mentored to use best practices and clean code principles to produce high q
 I get along great with people and love working in a team.
 In my spare time I love hiking and I weave baskets.
 
-## Top Languages
+## Top Languages and GitHub stats
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=avshrlev&layout=compact&theme=dark)](https://github.com/avshrlev/github-readme-stats) ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=avshrlev&theme=dark&hide=contribs,stars,issues,contribs)
+
+## Skills
+
+![JavaScript](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=4AB197)
 
 <!--
 **AvshRLev/avshrlev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
