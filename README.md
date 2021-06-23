@@ -7,7 +7,7 @@ I was mentored to use best practices and clean code principles to produce high q
 I get along great with people and love working in a team.
 In my spare time I love hiking and I weave baskets.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=avshrlev)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 **AvshRLev/avshrlev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
