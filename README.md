@@ -24,7 +24,7 @@ In my spare time I love hiking and I weave baskets.
 ## I am currently working on
 
 [My Space-Invaders Project :space_invader:](https://space-invaders.avshi.net)
-You are very welcome to read all about it at [this link](https://github.com/AvshRLev/gamesproject#the-space-invaders-project-space_invader)
+You are very welcome to read all about it at [The Project's README.md](https://github.com/AvshRLev/gamesproject#the-space-invaders-project-space_invader)
 
 <!--
 **AvshRLev/avshrlev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
