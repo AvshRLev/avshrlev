@@ -21,10 +21,12 @@ In my spare time I love hiking and I weave baskets.
 
 ![EC2](https://img.shields.io/badge/AWS-EC2-informational?style=flat&logo=amazon&logoColor=white&color=4AB197) ![Route53](https://img.shields.io/badge/AWS-Route53-informational?style=flat&logo=amazon&logoColor=white&color=4AB197) ![ELB](https://img.shields.io/badge/AWS-ELB-informational?style=flat&logo=amazon&logoColor=white&color=4AB197) ![RDS](https://img.shields.io/badge/AWS-RDS-informational?style=flat&logo=amazon&logoColor=white&color=4AB197)
 
-## I am currently working on
+## I Am Currently Working On
 
 [My Space-Invaders Project :space_invader:](https://space-invaders.avshi.net)
 You are very welcome to read all about it at [The Project's README.md](https://github.com/AvshRLev/gamesproject#the-space-invaders-project-space_invader)
+
+[![Avshi's GitHub Banner](./assets/space-invaders.png)](https://github.com/AvshRLev/gamesproject#the-space-invaders-project-space_invader)
 
 <!--
 **AvshRLev/avshrlev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
