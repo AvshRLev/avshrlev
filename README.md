@@ -7,7 +7,7 @@ I was mentored to use best practices and clean code principles to produce high q
 I get along great with people and love working in a team.
 In my spare time I love hiking and I weave baskets.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=avshrlev&layout=compact)](https://github.com/avshrlev/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=avshrlev&layout=compact&theme=dark)](https://github.com/avshrlev/github-readme-stats)
 
 <!--
 **AvshRLev/avshrlev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
