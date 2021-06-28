@@ -1,5 +1,5 @@
 [![Avshi's GitHub Banner](./assets/welcomebanner.png)]()
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/avshalom-richter-levin-a5791471) [![LinkedIn Badge](https://img.shields.io/badge/StackOverflow-Profile-informational?style=flat&logo=stackoverflow&logoColor=white&color=FF9900)](https://stackoverflow.com/users/story/16142591) [![Gmail Email](https://img.shields.io/badge/Gmail-Email-informational?style=flat&logo=gmail&logoColor=white&color=red)](mailto:avsha.earth@gmail.com)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/avshalom-richter-levin-a5791471) [![LinkedIn Badge](https://img.shields.io/badge/StackOverflow-Profile-informational?style=flat&logo=stackoverflow&logoColor=white&color=FF9900)](https://stackoverflow.com/users/story/16142591) [![Gmail Email](https://img.shields.io/badge/Gmail-Email-informational?style=flat&logo=gmail&logoColor=white&color=green)](mailto:avsha.earth@gmail.com)
 
 
 ## About
