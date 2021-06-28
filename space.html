@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <title>The Space Invaders Project</title>
+    <meta name="generator" content="Jekyll v3.9.0">
+    <meta property="og:title" content="The Space Invaders Project :space_invader:">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="https://avshi.net/">
+    <meta property="og:url" content="https://avshi.net/">
+    <meta property="og:site_name" content="avshrlev">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="The Space Invaders Project :space_invader:">
+    <script type="application/ld+json">
+    {"url":"https://avshi.net/","@type":"WebSite","headline":"The Space Invaders Project :space_invader:","name":"avshrlev","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+    
+        <style class="anchorjs"></style><link rel="stylesheet" href="/assets/css/style.css?v=62cab5c4665180b5b994b25fe96c1751dca612f2">
+      </head>
+      <body>
+        <div class="container-lg px-3 my-5 markdown-body">
+          
+          <h1><a href="https://avshi.net/">The Space Invaders Project</a></h1>
+          
+    
+          <h1 id="the-space-invaders-project-space_invader">The Space Invaders Project :space_invader:</h1>
+    
+    <p><a href="https://github.com/AvshRLev/gamesproject/actions"><img src="https://github.com/AvshRLev/gamesproject/workflows/Front%20End%20Tests/badge.svg" alt="Front End Tests Actions Status"></a> <a href="https://github.com/AvshRLev/gamesproject/actions"><img src="https://github.com/AvshRLev/gamesproject/workflows/Lint%20Code%20Base%20Action/badge.svg" alt="Lint Code Base Action Actions Status"></a> <a href="https://space-invaders.avshi.net/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website space-invaders.avshi.net"></a></p>
+    
+    <p>This is my final project to Harvard’s <strong>CS50’s Web Programming with Python and JavaScript</strong>.</p>
+    
+    <p>It was created end to end by me for learning and showcasing my abilities.</p>
+    
+    <p>Space Invaders was the first computer game I had ever played on my first computer with a black and green screen when I was a little boy and I tried to recreate it as I remembered It.</p>
+    
+    <p>At the moment It has 4 different levels where you are the defending spaceship trying to shoot all the aliens as they are advancing towards the ground.</p>
+    
+    <p>Time is counted and every alien you destroy gives you 10 points.</p>
+    
+    <p><img src="/docs/screenshot.png" alt="Screenshot"></p>
+    
+    <p>It is written in Python with the Django Web framework with a PostgreSQL DB hosted on AWS’s RDS and the front end is augmented with vanilla JavaScript.</p>
+    
+    <p>I have chosen not to use a framework or library such as React or Angular for this project in order to build a strong foundation of the JavaScript language and a solid ability to control the DOM manually.</p>
+    
+    <p>I do use the Node.js eco system for testing with Jest and Puppeteer and bundling with webpack.</p>
+    
+    <p>To view the project online follow <a href="https://space-invaders.avshi.net" title="Link to my project online">this link</a></p>
+    
+    <p>It is not mobile friendly yet so make sure to visit from a desktop or a laptop.</p>
+    
+    <h2 id="table-of-contents">Table of contents<a class="anchorjs-link " href="#table-of-contents" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <ol>
+      <li><a href="#project-architecture">Project Architecture</a></li>
+      <li><a href="#deployment-architecture">Deployment Architecture</a></li>
+      <li><a href="#deployment-pipeline">Deployment Pipeline</a></li>
+      <li><a href="#my-git-workflow">My Git Workflow</a></li>
+      <li><a href="#best-practices-learned">Best Practices Learned</a></li>
+      <li><a href="#inspirations">Inspirations</a></li>
+      <li><a href="#testing">Testing</a></li>
+      <li><a href="#general-workflow">General Workflow</a></li>
+    </ol>
+    
+    <h2 id="project-architecture">Project Architecture<a class="anchorjs-link " href="#project-architecture" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p>Overview:</p>
+    
+    <p><img src="/docs/Architecture.png" alt="Project Architecture"></p>
+    
+    <p>Detailed:</p>
+    
+    <p><img src="/docs/detailed-arch.png" alt="Detailed Architecture"></p>
+    
+    <h2 id="deployment-architecture">Deployment Architecture<a class="anchorjs-link " href="#deployment-architecture" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p><img src="/docs/k8saws.png" alt="Deployment Architecture"></p>
+    
+    <h3 id="how-i-deployed-kubernetes-on-aws">How I Deployed Kubernetes On AWS<a class="anchorjs-link " href="#how-i-deployed-kubernetes-on-aws" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+    <p>I used kubeadm to install kubernetes on 3 EC2 Instances a master and 2 workers.</p>
+    
+    <p>For a more in depth explanation and step by step guide you can follow <a href="/docs/k8s.md">This Link</a></p>
+    
+    <h2 id="deployment-pipeline">Deployment Pipeline<a class="anchorjs-link " href="#deployment-pipeline" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p><img src="/docs/ci-cd.png" alt="CI/CD"></p>
+    
+    <h3 id="or-even-simpler">Or even simpler<a class="anchorjs-link " href="#or-even-simpler" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+    <h4 id="my-ci">My CI<a class="anchorjs-link " href="#my-ci" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+    <p>Push -&gt; Test + Lint -&gt; Pull Request -&gt; Code Review -&gt; Adress Comments -&gt; Merge To Main</p>
+    
+    <h4 id="my-cd">My CD<a class="anchorjs-link " href="#my-cd" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+    <p>Merge To Main -&gt; <a href=".github/workflows/test-run.yml">Test</a> + <a href=".github/workflows/super-linter.yml">Lint</a>
+    -&gt; <a href=".github/workflows/docker.yml">Build and Push Docker Image</a> -&gt; <a href=".github/workflows/deliver.yml">Kubernetes Redeploy</a></p>
+    
+    <h4 id="kubernetes-redeploy">Kubernetes Redeploy<a class="anchorjs-link " href="#kubernetes-redeploy" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+    <p>In this action I Basically SSH into the EC2 Instance that is configured as my master node and run a script that triggers it to terminate the existing pods with this app and run new ones pulling the freshly pushed Docker Image.</p>
+    
+    <h2 id="my-git-workflow">My Git Workflow<a class="anchorjs-link " href="#my-git-workflow" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p>When I start working on a feature I start by checking out the main branch</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout main
+    </code></pre></div></div>
+    
+    <p>Pull the most recent commit with</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
+    </code></pre></div></div>
+    
+    <p>Then create a new branch for it with</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> new_branch_name
+    </code></pre></div></div>
+    
+    <p>When my code reaches a state i would like to keep it’s time to commit</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-am</span> <span class="s2">"Concise message to convey what happens in this commit"</span>
+    </code></pre></div></div>
+    
+    <p>The -a flag stages all files that have been modified and deleted, if new files were created they need to be added with</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add new_file.ext
+    </code></pre></div></div>
+    
+    <p>Or I simply use my IDE to add them.</p>
+    
+    <p>The -m flag is for adding the message in the same line without opening an editor.</p>
+    
+    <p>If I want to commit in a state where things are not working and I will not want this commit in my history I will</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-am</span> <span class="s2">"f"</span>
+    </code></pre></div></div>
+    
+    <p>Letting myself know I will want to use the fixup option later when I rebase this branch interactively.</p>
+    
+    <p>When it is time to push, On the first push of a new branch</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">--set-upstream</span> origin new_branch
+    </code></pre></div></div>
+    
+    <p>On consequent pushes it is enough to just <code class="language-plaintext highlighter-rouge">git push</code></p>
+    
+    <p>Before I push I check for commits with a message of “f” with</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--oneline</span>
+    </code></pre></div></div>
+    
+    <p>In case there are such messages I will count the number of commits to the last commit that is not marked with “f”
+    For example if I have 5 commits to the last commit that is not marked with “f” like in this screenshot:</p>
+    
+    <p><img src="/docs/gitlog.png" alt="Git Log"></p>
+    
+    <p>I will use an interactive rebase</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~5
+    </code></pre></div></div>
+    
+    <p>Which will open an editor as such:</p>
+    
+    <p><img src="/docs/git-rebase.png" alt="Git Rebase Editor"></p>
+    
+    <p>In which I will change the pick in all the commits marked with “f” to f (stands for fixup)</p>
+    
+    <p><img src="/docs/git-rebase-fixup.png" alt="Git Rebase Fixup"></p>
+    
+    <p>And after I exit the editor all the changes in these commits are kept in the commits that came before them that we picked so if we <code class="language-plaintext highlighter-rouge">$ git log --oneline</code> again we will get:</p>
+    
+    <p><img src="/docs/git-log-after.png" alt="Git Log After Rebase Interactive"></p>
+    
+    <p>After an interactive rebase pushing has to forced in order to work</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">-f</span>
+    </code></pre></div></div>
+    
+    <p>Next when I have a pull request that is ready to be merged into main, before I do I will</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch
+    </code></pre></div></div>
+    
+    <p>To make sure origin/main is up to date and then from the branch i want to merge</p>
+    
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase origin/main
+    </code></pre></div></div>
+    
+    <p>In case of merge conflicts I solve them in my IDE and after I am done i know my branch is based off the latest commit to main and when merged my git history will be organized and clear.</p>
+    
+    <h2 id="best-practices-learned-mortar_board">Best Practices Learned :mortar_board:<a class="anchorjs-link " href="#best-practices-learned-mortar_board" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <h3 id="best-practices-and-coding-principles-learned-while-working-on-this-project">Best practices and coding principles learned while working on this project<a class="anchorjs-link " href="#best-practices-and-coding-principles-learned-while-working-on-this-project" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+    
+    <ul>
+      <li>
+        <h4 id="naming---names-names-names">Naming - names, names, names…<a class="anchorjs-link " href="#naming---names-names-names" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>Naming defines responsability.
+    Once you start defining the responsibilities you tend to refactor your code to smaller cohesive units.</p>
+    
+        <p>It allows us to see what a method or a function is supposed to do and when we see something that does not belong there it will be easy to spot and fix.</p>
+    
+        <p>The names we give functions,class methods, variables, and also commit messages, branches and pull requests are all very important for our and other’s ability to understand and maintain the code that we write.</p>
+      </li>
+      <li>
+        <h4 id="refactoring-and-the-single-responsibility-principle">Refactoring and The Single Responsibility Principle<a class="anchorjs-link " href="#refactoring-and-the-single-responsibility-principle" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>After we have named and thus gave the different units of our code their responsibilities we make sure
+    that every unit does one thing only.</p>
+    
+        <p>if a unit does more than one thing we break it down into smaller units and smaller until each one does one thing for which it is named.</p>
+    
+        <p>The advantage is that it is easier to understand, read, test and change our code this way.</p>
+      </li>
+      <li>
+        <h4 id="when-should-you-write-comments-in-code-what-should-it-describe">When should you write comments in code? What should it describe?<a class="anchorjs-link " href="#when-should-you-write-comments-in-code-what-should-it-describe" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>Good code explains itself and does not need comments but if for some reason you find yourself with a piece of code that does not explain itself or is too complex, until you get the chance to refactor, Comments in code should explain why you chose to do something and not how you did it (the code itself should explain the how).</p>
+    
+        <p>We use comments when function names are not telling the whole story and there’s a need to tell the meaning behind it.</p>
+      </li>
+      <li>
+        <h4 id="command-query-separation-principle">Command Query Separation Principle<a class="anchorjs-link " href="#command-query-separation-principle" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>If asking a question changes the answer, we’re likely to run into problems.</p>
+    
+        <p>CQS (Command-Query Separation) is a design principle that states that a method is either a COMMAND that performs an action (with side effects) OR a QUERY that returns data to the caller, but never both.</p>
+    
+        <p>Queries avoid mutations. It means that we make a separation between functions that return information and functions that perform some kind of action.</p>
+    
+        <p>By enforcing this separation, the code becomes simpler to understand. Is this changing something, or just fetching something? When a method does both (changes the state of the application and retrieves data), it becomes a lot harder to understand it’s true purpose.</p>
+    
+        <p>And the main advantage is that we can safely and easily use our queries, In addition it makes our code easier to understand and maintain.</p>
+    
+        <p>Some of these sentences are quoted from <a href="https://khalilstemmler.com/articles/oop-design-principles/command-query-separation/">this website</a> which is a great resource.</p>
+    
+        <p><a href="https://github.com/AvshRLev/gamesproject/pull/4#discussion_r606762767">Also you can see this discussion in one of this repo’s pull requests</a></p>
+      </li>
+      <li>
+        <h4 id="pure-functions">Pure Functions<a class="anchorjs-link " href="#pure-functions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>A pure function is a function that works on a given parameter and gives out an Output but does not change the original parameter.</p>
+    
+        <p>The advantage of it is that you don’t need to worry about side effects when you use pure functions because they have no side effects.</p>
+    
+        <p>Its important to note that pure function only manipulates the data it got as input to return an answer and does not get any data from hidden dependencies like a database or other objects for example.</p>
+    
+        <p>The biggest advantage of pure functions is that they are deterministic - you’ll always get the same result for the same inputs and thats very easy to reason about.</p>
+      </li>
+      <li>
+        <h4 id="declarative-vs-imperative-programming">Declarative vs Imperative programming<a class="anchorjs-link " href="#declarative-vs-imperative-programming" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>In declarative programming you declare what you are going to do (for example: .map() and .filter())</p>
+    
+        <p>In Imperative programming you simply do the things (for example: for loops )</p>
+    
+        <p>Simply put -&gt; Declarative is the what, Imperative is the how</p>
+      </li>
+      <li>
+        <h4 id="when-should-a-function-be-a-class-method">When should a function be a class method?<a class="anchorjs-link " href="#when-should-a-function-be-a-class-method" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>If a function has dependencies inside the class (i.e that it needs something specific from inside the class or that it works on specific things in that class) than it should be a class method.</p>
+      </li>
+      <li>
+        <h4 id="why-is-code-formatting-and-styling-important">Why is code formatting and styling important?<a class="anchorjs-link " href="#why-is-code-formatting-and-styling-important" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>When you work in a team and have a huge codebase its much easier when all the code looks alike.</p>
+    
+        <p>Less cognitive pressure on your brain.</p>
+      </li>
+      <li>
+        <h4 id="refactoring-heavily-nested-if-else-statements">Refactoring heavily nested if else statements<a class="anchorjs-link " href="#refactoring-heavily-nested-if-else-statements" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>Organizing the ifs one under the other in the order in which you want the conditions to be evaluated so if the first if is true all the others won’t need to be evaluated and use early returns to break out of them.</p>
+      </li>
+      <li>
+        <h4 id="why-you-should-not-change-parameters-that-are-passed-into-a-function">Why you should not change parameters that are passed into a function?<a class="anchorjs-link " href="#why-you-should-not-change-parameters-that-are-passed-into-a-function" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>They are not the actual parameters but copies of them and if you pass the reference you might have side effects you did not expect.</p>
+      </li>
+      <li>
+        <h4 id="why-functions-should-never-return-null">Why functions should never return null<a class="anchorjs-link " href="#why-functions-should-never-return-null" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>Returning null leads to the spread of null values and the need for verifications for null. Instead, try to use objects with default properties, or even throw errors.</p>
+    
+        <p>An interesting article about why you should <em><a href="https://odetocode.com/blogs/scott/archive/2019/08/07/think-twice-before-returning-null.aspx">Think Twice Before Returning null</a></em>.</p>
+    
+        <p>Learn <em><a href="https://dmitripavlutin.com/javascript-null/">Everything about null in JavaScript</a></em> in this great article.</p>
+      </li>
+      <li>
+        <h4 id="the-way-i-introduce-new-tech-into-my-project">The way I introduce new tech into my project<a class="anchorjs-link " href="#the-way-i-introduce-new-tech-into-my-project" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <ul>
+          <li>Start with a working “Hello World!” basic implementation of new tech</li>
+          <li>Implement the most basic “Hello World!” tutorial of new tech inside the project step by step (even copy line by line from the working example)</li>
+          <li>Implement the smallest most simple function inside the project with new tech</li>
+          <li>Grow from there</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="the-debugging-state-of-mind">The debugging state of mind<a class="anchorjs-link " href="#the-debugging-state-of-mind" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+    
+        <p>The debugging state of mind entails having a cup of tea (Or a cool drink in the summer), your favorite relaxing concentration music on the earphones, deep breaths and some stretching so that you are relaxed and able to think clearly about things.</p>
+    
+        <p>Solving problems doesn’t happen in a stressed mind and body.</p>
+      </li>
+    </ul>
+    
+    <h2 id="testing">Testing<a class="anchorjs-link " href="#testing" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p>The front end tests in this project are behaviour driven tests geared towards replacing the manual checks i would run after every change in the code base.</p>
+    
+    <p>This is done using Jest and Puppeteer.</p>
+    
+    <p>First of all, I make sure django is running and serving my app on localhost.</p>
+    
+    <p>Then I open a headless chrome with puppeteer and programtically simulate the steps I would take to run each test or check each behaviour of the app manually.</p>
+    
+    <p>I use Jest to assert the behaviour was indeed as expected.</p>
+    
+    <p>Below are some screenshots from the test report i get after every time the testing action runs in GitHub</p>
+    
+    <p><img src="/docs/results1.png" alt="Test Results"> <img src="/docs/results2.png" alt="Test Results"> <img src="/docs/results3.png" alt="Test Results"></p>
+    
+    <h2 id="general-workflow">General Workflow<a class="anchorjs-link " href="#general-workflow" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+    
+    <p>I have had the joy and luck to find an amazing mentor who is also an old time friend.. He has been training me and teaching me throughout this project.
+    We have been working in the Kanban method with a <a href="https://trello.com/b/OX4xBjob/space-invadors">trello board</a></p>
+    
+    <p><img src="/docs/trello.png" alt="Trello"></p>
+    
+    <p>My mentor has been adding tasks to the backlog and I have been moving them between the different columns until they found their way to the Done column and so I could take a new one from the backlog.</p>
+    
+    
+          
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+        <script>anchors.add();</script>
+        
+      
+    
+    </body>
+</html>
